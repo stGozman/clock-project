@@ -48,6 +48,7 @@ aside {
   overflow: hidden;
   width: 3rem;
   transition: all 0.5s;
+  position: static;
 }
 aside:hover{
   width: 12rem;
@@ -77,8 +78,8 @@ aside a{
   padding: 1rem 0.7rem;
 }
 
-aside li:has(i.fa-close){
-  padding: 1rem 0.7rem;
+aside .fa-close{
+  padding: 1rem 0rem 1rem 0.7rem;
 }
 
 aside i, aside img{
@@ -98,7 +99,7 @@ aside li:hover img{
   transform: scale(1.4, 1.4);
 }
 
-aside li:has(i.fa-close){
+#close-aside{
   display: none;
 }
 
